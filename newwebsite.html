@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelo's Ice Cream PH</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Video background */
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto; 
+            height: auto;
+            z-index: -1;
+            background-size: cover;
+            transition: opacity 2s ease-in-out;
+        }
+
+        /* Header styles */
+        header {
+            background-color: transparent; /* Transparent background to let the video show */
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative; /* Ensure header content stays on top of video */
+            z-index: 1; /* Ensure header content stays on top of video */
+        }
+
+        .logo-container img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffecdc;
+        }
+
+        /* Main content styles */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            color: #fff;
+            position: relative; /* Ensure content stays on top of video */
+            z-index: 1; /* Ensure content stays on top of video */
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffecdc;
+            color: #ff5733;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff5733;
+            color: #fff;
+        }
+
+        /* Features section styles */
+        .features {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            position: relative; /* Ensure content stays on top of video */
+            z-index: 1; /* Ensure content stays on top of video */
+        }
+
+        .feature {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .feature h3 {
+            margin-top: 20px;
+            color: #ff5733;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative; /* Ensure content stays on top of video */
+            z-index: 1; /* Ensure content stays on top of video */
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop>
+    <source src=vid123.mp4 type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<header>
+    <div class="logo-container">
+        <img src="LOGO123.jpg" alt="Gelo's Ice Cream Logo">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="newwebsite.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Welcome to Gelo's Ice Cream</h1>
+        <p>Step into a world where every scoop is a celebration, every flavor a delight, and every visit a cherished memory.</p>
+        <a href="about.html" class="btn">Read more</a>
+    </section>
+
+    <section class="features">
+        <h2>Our Specialties</h2>
+        <div class="feature">
+            <img style="width: 100%;" src="image11.jpg" alt="Ice Cream Flavor 1">
+            <h3>Local Flavors</h3>
+            <p>Experience the rich culinary heritage of the Philippines in every scoop.</p>
+        </div>
+        <div class="feature">
+            <img style="width: 100%;" src="imaege21.jpeg" alt="Ice Cream Flavor 2">
+            <h3>Artisanal Creations</h3>
+            <p>Indulge in our handcrafted ice cream made with the finest ingredients.</p>
+        </div>
+        <div class="feature">
+            <img style="width: 100%;" src="image31.jpeg" alt="Ice Cream Flavor 3">
+            <h3>Seasonal Specials</h3>
+            <p>Try our limited-time seasonal flavors inspired by local festivities.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Gelo's Ice Cream PH. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
